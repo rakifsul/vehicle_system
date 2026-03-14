@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Presets/RFSoda100.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Presets/RFSoda40.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Scripts/StartMenu.gd" type="Script" id=3]
+
+[node name="StartMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -513.0
+margin_top = 21.0
+margin_right = 511.0
+margin_bottom = 224.0
+custom_fonts/font = ExtResource( 1 )
+text = "RF Vehicle System"
+align = 1
+valign = 1
+
+[node name="Start" type="Button" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -210.0
+margin_top = 258.0
+margin_right = 214.0
+margin_bottom = 304.0
+custom_fonts/font = ExtResource( 2 )
+text = "Start"
+
+[node name="Quit" type="Button" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -211.0
+margin_top = 328.0
+margin_right = 213.0
+margin_bottom = 374.0
+custom_fonts/font = ExtResource( 2 )
+text = "Quit"
+
+[connection signal="pressed" from="Start" to="." method="_on_Start_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]
