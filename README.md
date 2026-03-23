@@ -1,16 +1,12 @@
 # vehicle_system - Godot Engine Vehicle System
 
-## Intro
+## Pendahuluan
 
-This project is an implementation of a vehicle system using Godot Engine.
+Implementasi sistem kendaraan dengan menggunakan Godot Engine.
 
-## Where to Download
+## Cara Penggunaan
 
-Download this project on the "Releases" page.
-
-## How to Use
-
-Open with Godot Engine 3, then run the scene.
+Buka dengan Godot Engine 3, kemudian jalankan scene-nya.
 
 ## Screenshot
 
